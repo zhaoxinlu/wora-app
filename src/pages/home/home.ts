@@ -34,40 +34,14 @@ export class HomePage {
   }
 
   ngOnInit() {
-    // this.initBuptBbsRss()
 
-    this.films = this.http.get('http://swapi.co/api/films')
+    this.films = this.http.get('http://www.sojson.com/open/api/weather/json.shtml?city=%E5%8C%97%E4%BA%AC')
                           .map(res => res.json());
   }
 
   openDetails(film) {
     this.navCtrl.push(DetailPage, {film: film});
   }
-  // @angular/http
-  // initBuptBbsRss() {
-  //   this.http.get(this.rssUrl)
-  //                   .map(res => res.text()) //toJson(res.text()))
-  //                   .subscribe(
-  //                     data => {
 
-  //                       const fixedData = data.replace(
-  //                                                 /href="\\/g,
-  //                                                 'href="#',
-  //                                               )
-  //                                               .replace(
-  //                                                 /src="\//g,
-  //                                                 'src="http://bbs.cloud.icybee.cn/',
-  //                                               )
-  //                       parseString(fixedData, (err, result) => {
-  //                         this.posts = result.rss.channel[0].item
-  //                         console.log(this.posts)
-  //                       })
-
-  //                     },
-  //                     err => {
-  //                       console.log("Oops!", err);
-  //                     }
-  //                   )
-  // }
 
 }

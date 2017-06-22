@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>时间</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -20,10 +20,10 @@
 <ion-list>
   <button
     ion-item
-    *ngFor="let film of (films | async)?.results"
+    *ngFor="let film of (films | async)?.data.forecast"
     (click)="openDetails(film)"
   >
-    {{ film.title }}
+    {{ film.date }}
   </button>
 </ion-list>
 

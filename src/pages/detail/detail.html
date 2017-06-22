@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar color="primary">
-    <ion-title>{{ film.title }}</ion-title>
+    <ion-title>{{ film.date }} 天气情况</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,7 +17,15 @@
 
   <ion-card>
     <ion-card-content>
-      {{ film.opening_crawl }}
+      最高温度：{{ film.high }}
+      <br />
+      风力：{{ film.fengli }}
+      <br />
+      最低温度：{{ film.low }}
+      <br />
+      风向：{{ film.fengxiang }}
+      <br />
+      天气状况：{{ film.type }}
     </ion-card-content>
   </ion-card>
 
