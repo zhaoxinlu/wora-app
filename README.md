@@ -79,3 +79,6 @@ npm run ionic:serve
 * Code released under the Apache-2.0 License
 * Docs released under Creative Commons
 
+## Demo
+
+![img](https://github.com/zhaoxinlu/wora-app/blob/master/beijing-weather-app.gif)
